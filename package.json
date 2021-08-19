@@ -8,17 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ardinio/RestApiOvning.git"
+    "url": "git+https://github.com/Ardinio/restapiinlaming.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ardinio/RestApiOvning/issues"
+    "url": "https://github.com/Ardinio/restapiinlaming/issues"
   },
-  "homepage": "https://github.com/Ardinio/RestApiOvning#readme",
+  "homepage": "https://github.com/Ardinio/restapiinlaming#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-validator": "^6.12.1",
     "nodemon": "^2.0.12"
   }
 }

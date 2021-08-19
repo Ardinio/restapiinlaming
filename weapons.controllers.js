@@ -21,6 +21,18 @@ const getWeapons = (req, res, next) => {
 }
 
 /**
+ * Saves a new weapon to the DB
+ * @param {Request} req
+ * @param {Response} res 
+ * @param {NextFunction} next 
+ */
+
+ const saveWeapon = (req, res, next) => {
+    weapons.push(req.body);
+    res.json(req.body);
+}
+
+/**
  * Responds with the requested weapon or send an error if that weapon is not in the list
  * @param {Request} req 
  * @param {Response} res 
@@ -39,5 +51,6 @@ const getOneWeapon = (req, res, next) => {
 
 module.exports = {
     getWeapons,
+    saveWeapon,
     getOneWeapon
 }
