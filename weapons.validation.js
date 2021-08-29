@@ -16,6 +16,14 @@ const saveValidation = [
     checkValidation
 ];
 
+const updateValidation = [
+    body('name').notEmpty().isLength({ min: 3 }),
+    body('type').notEmpty().isLength({ min: 2 }),
+    body('durability').notEmpty().isLength({ min: 1 }),
+    checkValidation
+];
+
 module.exports = {
-    saveValidation
+    saveValidation,
+    updateValidation
 };

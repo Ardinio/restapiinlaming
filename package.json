@@ -1,8 +1,8 @@
 {
-  "name": "restapinilaming",
+  "name": "restapiilaming2.0",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },

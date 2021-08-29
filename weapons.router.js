@@ -1,6 +1,6 @@
 const express = require('express');
-const { getWeapons, getOneWeapon, saveWeapon } = require('./weapons.controllers');
-const { saveValidation } = require('./weapons.validation');
+const { getWeapons, getOneWeapon, updateWeapon, saveWeapon, deleteWeapons } = require('./weapons.controllers');
+const { saveValidation, updateValidation } = require('./weapons.validation');
 
 // Create the router obeject 
 const router = express.Router();
@@ -9,8 +9,8 @@ const router = express.Router();
 router.get('/api/weapons', getWeapons);
 router.get('/api/weapons/:id', getOneWeapon);
 router.post('/api/weapons', saveValidation, saveWeapon);
-router.put('/api/weapons/:id');
-router.delete('/api/weapons/:id');
+router.put('/api/weapons/:id', updateValidation, updateWeapon);
+router.delete('/api/weapons/:id', deleteWeapons);
 
 // Export the router object
 module.exports = router;

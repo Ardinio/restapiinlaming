@@ -1,1 +1,27 @@
-GET http://localhost:3000/api/weapons/
+GET http://localhost:3000/api/weapons
+
+###
+
+POST http://localhost:3000/api/weapons
+Content-Type: application/json
+
+{
+    "name": "Iron Knukel",
+    "type": "Fist",
+    "durability": "High"
+}
+
+###
+
+PUT http://localhost:3000/api/weapons/0
+Content-Type: application/json
+
+{
+    "name": "Uchigatana",
+    "type": "Sword",
+    "durability": "Medum"
+}
+
+###
+
+DELETE http://localhost:3000/api/weapons/1
